@@ -4,3 +4,5 @@ This repository contains the replication files for our paper ["Monetary Policy, 
 
 In case you build on our work or use parts of our code we ask you to cite our paper:  
 Kekre, R. and Lenel, M. (forthcoming), Monetary policy, redistribution, and risk premia. *Econometrica*.
+
+(C) 2022: [Rohan Kekre](https://sites.google.com/site/rohankekre/) and [Moritz Lenel](https://sites.google.com/site/moritzlenel)
