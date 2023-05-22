@@ -1,0 +1,273 @@
+\documentclass[12pt]{article}
+\usepackage[hmargin=1.4in,vmargin=1.4in]{geometry}
+\bibliographystyle{ecta}
+\usepackage[pdftex]{graphicx}
+\usepackage[outdir=../output/figures/]{epstopdf}
+\usepackage{tikz}
+\usepackage{subfigure}
+\usepackage{amsthm, amsmath, amsfonts}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{enumerate}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{multirow}
+\usepackage{cancel}
+\usepackage{booktabs}
+\usepackage{epstopdf}
+\usepackage{bm}
+\usepackage{apptools}
+\usepackage[multiple]{footmisc}
+\usepackage[hidelinks,hyperfootnotes=false]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{footnote}
+\usepackage{floatrow}
+\usepackage{array}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xr}
+\usepackage{pdflscape}
+\usepackage{caption}
+\allowdisplaybreaks
+\newcommand{\tunderbrace}[1]{\underbrace{\textstyle#1}}
+\newcommand{\toverbrace}[1]{\overbrace{\textstyle#1}}
+\makeatletter
+\newcommand{\vast}{\bBigg@{3}}
+\newcommand{\Vast}{\bBigg@{4}}
+\makeatother
+\makeatletter\let\expandableinput\@@input\makeatother
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
+
+\begin{document}
+\section{Numerical solution: main text}
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{clclcc} \hline
+\input{../output/tables/Targeted_Moments_1.tex}
+\end{tabular}
+\egroup
+\renewcommand\thetable{V}
+\caption{targeted moments and calibrated parameters}
+\label{tab:cal}
+\end{table}
+
+\pagebreak
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{17mm}C{17mm}C{17mm}} \hline
+\input{../output/tables/Untargeted_Moments_1.tex}
+\end{tabular}
+\egroup
+\renewcommand\thetable{VI}
+\caption{untargeted macro and micro moments}
+\label{tab:untargeted}
+\end{table}
+
+\vspace{40pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,clip=true,trim=0 0 0 0]{../output/figures/monetary_fig_split1}
+\renewcommand\thefigure{2}
+\caption{expected returns after negative monetary policy shock}
+\end{figure}
+
+\pagebreak
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,clip=true,trim=0 20 0 10]{../output/figures/monetary_fig_split2}
+\renewcommand\thefigure{3}
+\caption{redistribution after negative monetary policy shock}
+\end{figure}
+
+\vspace{40pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,clip=true,trim=0 0 0 0]{../output/figures/monetary_fig_split3}
+\renewcommand\thefigure{4}
+\caption{quantities after negative monetary policy shock}
+\end{figure}
+
+\pagebreak
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{35mm}C{18mm}C{17mm}} \hline
+\input{../output/tables/Campbell_Shiller.tex}
+\end{tabular}
+\egroup
+\renewcommand\thetable{VII}
+\caption{Campbell-Shiller decomposition of stock market return after monetary shock}
+\end{table}
+
+\vspace{20pt}
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{18mm}C{18mm}C{25mm}} \hline
+\input{../output/tables/m_real_effects.tex}
+\end{tabular}
+\egroup
+\caption*{Real effects of monetary shock}
+\end{table}
+
+\pagebreak
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{15mm}C{15mm}C{15mm}} \hline 
+\expandableinput ../output/tables/decomp_tab_1.tex
+\end{tabular}
+\egroup
+\renewcommand\thetable{VIII}
+\caption{decomposing capital accumulation on impact of shock}
+\end{table}
+
+\vspace{20pt}
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{13mm}C{13mm}C{13mm}C{14mm}} \hline 
+\expandableinput ../output/tables/decomp_tab_2.tex
+\end{tabular}
+\egroup
+\renewcommand\thetable{IX}
+\caption{decomposing wealth redistribution to $a$ households on impact of shock}
+\end{table}
+
+\pagebreak
+
+\section{Numerical solution: appendix}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,clip=true,trim=0 20 0 10]{../output/figures/TFP_compact_fig}
+\renewcommand\thefigure{A.2}
+\caption{impulse responses to positive productivity shock}
+\end{figure} 
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,clip=true,trim=0 20 0 10]{../output/figures/dis_compact_fig}
+\renewcommand\thefigure{A.3}
+\caption{impulse responses to positive disaster probability shock}
+\end{figure} 
+
+\pagebreak
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{clclcc} \hline
+\input{../output/tables/Targeted_Moments_8.tex}
+\end{tabular}
+\egroup
+\renewcommand\thetable{A.IV}
+\caption{targeted moments and calibrated parameters, alternative calibration}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,clip=true,trim=0 20 0 10]{../output/figures/interm_compact_fig}
+\renewcommand\thefigure{A.5}
+\caption{quantities after negative monetary policy shock, alternative calibration}
+\end{figure}
+
+\vspace{20pt}
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{35mm}C{18mm}C{17mm}} \hline
+\input{../output/tables/Campbell_Shiller_interm.tex}
+\end{tabular}
+\egroup
+\renewcommand\thetable{A.V}
+\caption{decomposition after monetary shock, alternative calibration}
+\end{table}
+
+\vspace{10pt}
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{18mm}C{18mm}C{25mm}} \hline
+\input{../output/tables/m_real_effects_interm.tex}
+\end{tabular}
+\egroup
+\caption*{Real effects of monetary shock}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{clclcc} \hline
+\input{../output/tables/Targeted_Moments_6.tex}
+\end{tabular}
+\egroup
+\renewcommand\thetable{A.VI}
+\caption{targeted moments and calibrated parameters, idiosyncratic risk}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,clip=true,trim=0 20 0 10]{../output/figures/idio_compact_fig}
+\renewcommand\thefigure{A.6}
+\caption{responses to negative monetary policy shock, idiosyncratic risk}
+\end{figure}
+
+\vspace{20pt}
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{35mm}C{18mm}C{17mm}} \hline
+\input{../output/tables/Campbell_Shiller_idio.tex}
+\end{tabular}
+\egroup
+\renewcommand\thetable{A.VII}
+\caption{decomposition after monetary shock, idiosyncratic risk}
+\end{table}
+
+\vspace{10pt}
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.25}
+\begin{tabular}{lC{18mm}C{18mm}C{25mm}} \hline
+\input{../output/tables/m_real_effects_idio.tex}
+\end{tabular}
+\egroup
+\caption*{Real effects of monetary shock}
+\end{table}
+
+\end{document}
+
+

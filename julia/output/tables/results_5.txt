@@ -1,0 +1,472 @@
+RUN 5 2023-02-22 17:50:08 
+
+PARAMETRIZATION
+-----------------------
+
+lmbd_a 0.04
+lmbd_b 0.36
+lmbd_c 0.6
+debt_to_equity 0.5
+bbeta_a 0.98
+bbeta_b 0.98
+bbeta_c 0.98
+gma_a 10.0
+gma_b 25.5
+gma_c 22.077922
+ies_a 0.8
+ies_b 0.8
+ies_c 0.8
+theta 1.0
+delta 0.025
+aalpha 0.33
+sig_z 0.0055
+chiX 3.5
+phi 1.5
+tayl_ic 0.003
+sig_m 0.000625
+rho_m 0.0
+disast_p -5.409889
+varphi_p 0.15
+rho_p 0.8
+disast_std 0.472381
+vareps_w 10.0
+tau_w -0.111111
+chiW 0.0
+s_bar_a 0.0
+s_bar_c -0.25
+s_trgt_a 0.18
+s_trgt_c 0.23
+xi 0.01
+l_target 1.0
+labor_alloc_a 0.75
+labor_alloc_b 0.388889
+labor_alloc_c 1.383333
+kbar 10.0
+gov_debt 0.1
+k_grid_adj 1.25
+w_grid_adj 1.06
+s_a_dev 0.1
+s_c_dev 0.1
+k_dev_param 0.1
+w_dev_param 0.05
+IRF_g 2.0
+IRF_m -10.0
+IRF_dis 2.0
+constrained_a 0
+constrained_b 0
+constrained_c 1
+use_idio_risk 0
+idio_risk_a 0.0
+idio_risk_b 0.0
+idio_risk_c 0.0
+-----------------------
+avrg p 0.005000001355642868
+std p 0.0025000022893639988
+-----------------------
+
+
+NUMERICAL VERIFICATION 
+-----------------------
+
+STATES MEAN AND STD 
+-----------------------
+        avrg.     grid_mean  std.  grid_dev
+k        23.83     24.13     0.54      2.41
+s_a      21.01%    18.00%    2.27%    10.00%
+s_c      23.32%    23.00%    0.79%    10.00%
+p         0.49%   -540.99%    0.24%   118.10%
+w         1.89      1.89     0.00      0.09
+m         0.00      0.00     0.00      0.00
+FIRST MOMENTS 
+-----------------------
+
+REAL OUTCOMES 
+-----------------------
+c          2.332255
+k         23.827898
+w          1.881225
+y          2.928826
+l          1.043125
+inv        0.596437
+
+PRICES (ANNUALIZED) 
+-----------------------
+infl       0.761435%
+E[rf]      1.594715%
+E[rk]      6.228146%
+E[rk-rf]   4.633431%
+E[rA-rf]   6.950147%
+
+AGENTS WEALTH AND PORTFOLIOS
+-----------------------
+s_a        0.207087
+s_c        0.232844
+share a   -1.339445
+share b    0.654360
+share c    0.044355
+
+MPCs and MPK
+-----------------------
+MPC A          0.019808
+MPC B          0.017814
+MPC C          0.019285
+MPS A          0.980192
+MPS B          0.982186
+MPS C          0.980715
+MPK A          1.861765
+MPK B          0.733410
+MPK C          0.000000
+
+-----------------------
+
+DIV/PRICE
+-----------------------
+D/P          0.021336
+-----------------------
+
+bg/y          90.411529%
+bg/(qk + bg)   9.865199%
+bg/z         264.787756%
+-----------------------
+
+BUSINESS CYCLE MOMENTS 
+-----------------------
+
+STD  log. growth 
+-----------------------
+
+std(k)          0.089804%
+std(w)          0.351305%
+std(y)          0.440053%
+std(c)          0.354570%
+std(c_a)        0.536261%
+std(c_b)        0.269984%
+std(c_c)        0.440744%
+std(l)          0.228800%
+std(inv)        1.575011%
+
+-----------------------
+
+CORR log growth 
+-----------------------
+
+cor(c,w)         92.954201%
+cor(c,y)         60.569734%
+cor(c,l)        -26.237414%
+cor(c,inv)       -4.114776%
+-----------------------
+
+cor(y,w)         85.617387%
+cor(y,l)         60.868984%
+cor(y,inv)       76.978810%
+
+-----------------------
+
+CORR hp filtered log y and returns 
+-----------------------
+
+cor(y,E(rf))     -20.307806%
+cor(y,E(rk)       -2.047354%
+cor(y,E(exc)      23.482265%
+-----------------------
+cor(dy,E(rf))     7.215797%
+cor(dy,E(rk)      2.701952%
+cor(dy,E(exc)    -7.941185%
+-----------------------
+cor(dy,dE(rf))   -30.088656%
+cor(dy,dE(rk)    -15.080084%
+cor(dy,dE(exc)    32.476486%
+-----------------------
+
+CORR detrended log. y and returns 
+-----------------------
+
+cor(y,E(rf))     -15.436649%
+cor(y,E(rk)      -17.232505%
+cor(y,E(exc)      14.653518%
+-----------------------
+cor(dy,dE(rf))     0.851428%
+cor(dy,dE(rk)      1.107237%
+cor(dy,dE(exc)    -0.807017%
+-----------------------
+
+SKEW log. growth
+-----------------------
+
+skew(k)         15.490716%
+skew(w)         -0.207789%
+skew(y)         -0.442332%
+skew(c)          3.217699%
+skew(l)          2.892397%
+skew(inv)        1.427915%
+
+-----------------------
+
+PRICE MOMENTS 
+-----------------------
+
+STD  returns (ANNUALIZED) 
+-----------------------
+
+std(infl)       3.048793%
+std(rf)         2.888871%
+std(E[rf])      2.178189%
+std(E[rk])      0.370550%
+std(E[rk-rf])   1.848621%
+std(E[rA-rf])   2.772932%
+std(rA-rf])     3.757916%
+
+
+DIVIDEND PRICE STD
+std(d/p)   0.303783%
+
+SMOOTHED DIVIDEND PRICE STD
+std(d/p)   0.567636%
+
+AUTOcor 
+-----------------------
+
+ac(E[rA-rf])    77.321226%
+ac(E[rf])       77.862003%
+ac(rf)          13.656181%
+ac(d/p)          6.583435%
+
+AUTOcor YEAR OVER YEAR  
+-----------------------
+
+ac(d/p)          3.113500%
+
+AUTOcor SMOOTH 
+ac(d/p) smooth  72.262345%
+
+AUTOcor SMOOTH YEAR OVER YEAR 
+ac(d/p) smooth  10.120523%
+
+WEALTH SHARE STD
+std(sa)         2.268124%
+std(sc)         0.793082%
+
+-----------------------
+
+Monetary policy shock - effects on impact 
+-----------------------
+log(inv)         -41.115207bp
+log(c)             4.486724bp
+log(y)            -5.509570bp
+log(excret)           -323.471502bp
+-----------------------
+
+Campbell Shiller Decomposition - not levered 
+-----------------------
+
+ExcRet            -0.036665%
+CF News        -0.043523% (118.704635%)
+rF News        -0.016509% (-45.026862%)
+Ex News         0.018598% ( 50.723280%)
+
+-----------------------
+SUM            -0.045612% (124.401052%)
+
+-----------------------
+
+Campbell Shiller Decomposition - levered 
+-----------------------
+
+ExcRet            -1.677024%
+CF News        -2.793897% (166.598544%)
+rF News        -0.385708% (-22.999552%)
+Ex News         0.748414% ( 44.627539%)
+
+-----------------------
+SUM            -3.156604% (188.226531%)
+
+-----------------------
+
+
+
+
+MOMENTS WITH DISASTER
+
+NUMERICAL VERIFICATION 
+-----------------------
+
+STATES MEAN AND STD 
+-----------------------
+        avrg.     grid_mean  std.  grid_dev
+k        23.73     24.13     0.54      2.41
+s_a      18.86%    18.00%    3.17%    10.00%
+s_c      22.92%    23.00%    0.88%    10.00%
+p         0.50%   -540.99%    0.24%   118.10%
+w         1.89      1.89     0.00      0.09
+m         0.00      0.00     0.00      0.00
+FIRST MOMENTS 
+-----------------------
+
+REAL OUTCOMES 
+-----------------------
+c          2.329141
+k         23.729611
+w          1.879053
+y          2.923604
+l          1.042468
+inv        0.594302
+
+PRICES (ANNUALIZED) 
+-----------------------
+infl       0.454979%
+E[rf]      1.441156%
+E[rk]      5.959278%
+E[rk-rf]   4.518122%
+E[rA-rf]   6.777183%
+
+AGENTS WEALTH AND PORTFOLIOS
+-----------------------
+s_a        0.187781
+s_c        0.229242
+share a   -1.417077
+share b    0.615316
+share c    0.024733
+
+MPCs and MPK
+-----------------------
+MPC A          0.019845
+MPC B          0.017813
+MPC C          0.019298
+MPS A          0.980155
+MPS B          0.982187
+MPS C          0.980702
+MPK A          1.872060
+MPK B          0.742244
+MPK C          0.000000
+
+-----------------------
+
+DIV/PRICE
+-----------------------
+D/P          0.022414
+-----------------------
+
+bg/y          90.204620%
+bg/(qk + bg)   9.864412%
+bg/z         263.710790%
+-----------------------
+
+BUSINESS CYCLE MOMENTS 
+-----------------------
+
+STD  log. growth 
+-----------------------
+
+std(k)          1.103035%
+std(w)          1.146497%
+std(y)          1.204752%
+std(c)          1.136959%
+std(c_a)        2.302244%
+std(c_b)        0.877601%
+std(c_c)        1.143140%
+std(l)          0.229232%
+std(inv)        2.005548%
+
+-----------------------
+
+CORR log growth 
+-----------------------
+
+cor(c,w)         99.371312%
+cor(c,y)         95.513129%
+cor(c,l)          4.974211%
+cor(c,inv)       59.472210%
+-----------------------
+
+cor(y,w)         98.220810%
+cor(y,l)         34.310745%
+cor(y,inv)       80.603828%
+
+-----------------------
+
+CORR hp filtered log y and returns 
+-----------------------
+
+cor(y,E(rf))      -3.637739%
+cor(y,E(rk)       -3.171942%
+cor(y,E(exc)       3.661419%
+-----------------------
+cor(dy,E(rf))     4.272303%
+cor(dy,E(rk)      3.315535%
+cor(dy,E(exc)    -4.377969%
+-----------------------
+cor(dy,dE(rf))   -12.225577%
+cor(dy,dE(rk)    -11.685889%
+cor(dy,dE(exc)    12.282163%
+-----------------------
+
+CORR detrended log. y and returns 
+-----------------------
+
+cor(y,E(rf))       4.894771%
+cor(y,E(rk)       10.763839%
+cor(y,E(exc)      -3.692232%
+-----------------------
+cor(dy,dE(rf))    -8.216890%
+cor(dy,dE(rk)     -8.065482%
+cor(dy,dE(exc)     8.221357%
+-----------------------
+
+SKEW log. growth
+-----------------------
+
+skew(k)        -1333.667864%
+skew(w)        -1158.847339%
+skew(y)        -1082.613556%
+skew(c)        -1156.031311%
+skew(l)          0.135123%
+skew(inv)      -330.530991%
+
+-----------------------
+
+PRICE MOMENTS 
+-----------------------
+
+STD  returns (ANNUALIZED) 
+-----------------------
+
+std(infl)       3.160156%
+std(rf)         2.988848%
+std(E[rf])      2.257623%
+std(E[rk])      0.367038%
+std(E[rk-rf])   1.935321%
+std(E[rA-rf])   2.902981%
+std(rA-rf])     7.405610%
+
+
+DIVIDEND PRICE STD
+std(d/p)   1.070518%
+
+SMOOTHED DIVIDEND PRICE STD
+std(d/p) 9340159183438382.000000%
+
+AUTOcor 
+-----------------------
+
+ac(E[rA-rf])    77.677646%
+ac(E[rf])       77.993772%
+ac(rf)          14.407259%
+ac(d/p)          0.578684%
+
+AUTOcor YEAR OVER YEAR  
+-----------------------
+
+ac(d/p)          1.176888%
+
+AUTOcor SMOOTH 
+ac(d/p) smooth  99.994474%
+
+AUTOcor SMOOTH YEAR OVER YEAR 
+ac(d/p) smooth  99.978150%
+
+WEALTH SHARE STD
+std(sa)         3.167281%
+std(sc)         0.878484%
+
+-----------------------
+
