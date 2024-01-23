@@ -5,6 +5,6 @@ This repository contains the replication files for our paper ["Monetary Policy, 
 The results in the paper are produced using the Fortran code. The Julia code is a very literal translation to Julia that lacks further optimization and should only be considered as a starting point when developing related projects.
 
 In case you build on our work or use parts of our code we ask you to cite our paper:  
-Kekre, R. and Lenel, M. (forthcoming), Monetary policy, redistribution, and risk premia. *Econometrica*.
+Kekre, R. and Lenel, M. (2022), Monetary policy, redistribution, and risk premia. [Econometrica](https://onlinelibrary.wiley.com/doi/full/10.3982/ECTA18014).
 
 (C) 2022: [Rohan Kekre](https://sites.google.com/site/rohankekre/) and [Moritz Lenel](https://sites.google.com/site/moritzlenel)
